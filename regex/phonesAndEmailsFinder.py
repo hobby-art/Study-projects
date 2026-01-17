@@ -1,5 +1,5 @@
 """
-This program scans text in a clipboard for ukrainian phone numbers and emails.
+This program scans text in the clipboard for ukrainian phone numbers and emails.
 """
 
 import pyperclip, re
@@ -56,3 +56,4 @@ all_matches = formatted_phones + email_matches
 # Copy all matches to the clipboard and make each match on a new line.
 pyperclip.copy("\n".join(all_matches))
 print("\n".join(all_matches))
+
